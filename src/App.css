@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+.app {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  transition: margin-left 0.3s;
+  margin-left: 220px;
+}
+
+.menu-button {
+  margin: 0.5rem;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1976d2;
+  color: white;
+}
+
+.sidebar-title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  background-color: #1565c0 !important;
+  margin-left: 220px;
+}
+
+.dashboard {
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dashboard-title {
+  font-weight: bold;
+  color: #1976d2;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-log {
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.data-grid-container {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.faq-section {
+  margin-top: 2rem;
 }
